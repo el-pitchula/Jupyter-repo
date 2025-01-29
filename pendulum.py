@@ -11,7 +11,7 @@ for episode in range(1, episodes+1):
     
     while not done:
         action = random.choice([0, 1])
-        _, reward, done, -__== env.step(action)
+        _, reward, done, -__= env.step(action)
         score += reward
         env.render()
     print(f"Episode: {episode}, Score: {score}")
